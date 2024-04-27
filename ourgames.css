@@ -1,18 +1,23 @@
 .row{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: 100vh;
 }
 
 .img{
     height: 35vh;
-    position: relative;
+    width: 34vw;
+    margin-top: 1vh;
+    margin-left: 1vw;
 }
 
 .imgTwo{
-    
+    height: 35vh;
+    width: 19vw;
+    margin-left: 2.3vw;
+    margin-top: 1vh;
 }
 
 .link{
@@ -22,6 +27,8 @@
 
 ul{
     list-style-type: none;
+    padding: 0%;
+    margin: 0%;
 }
 
 .noUnderline{
@@ -35,6 +42,10 @@ ul{
     margin-top: 1vh;
 }
 
+.textColor{
+    color: black;
+}
+
 .marginRight{
     margin-right: 4vw;
     display: flex;
@@ -43,14 +54,12 @@ ul{
 }
 
 .marginLeft{
-    margin-left: 8vw;
+    margin-left: 5vw;
 }
 
 .border{
     border-style: solid;
-    border: 10vh;
-    border-radius: 20vh;
-
+    border-radius: 7vh;
 }
 
 .hover{
@@ -72,4 +81,23 @@ ul{
 .rowGame{
     display: flex;
     flex-direction: row-reverse;
+}
+
+.headline{
+    display: flex;
+    justify-content: center;
+}
+
+.width{
+    width: 40vw;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.marginLR{
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
