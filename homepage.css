@@ -7,13 +7,14 @@
     margin-right: 110px;
   }
 
-  .spaceTwo {
+  .spaceNav{
     display: flex;
-    justify-content: center;
+    width: 100%;
   }
 
-  .font{
-    
+  .spaceCenter {
+    display: flex;
+    justify-content: center;
   }
   
   .noTextDec {
@@ -42,10 +43,8 @@
 
   .top {
     display: flex;
-    background-color: #E0E1DD; 
-    width: 100%;
+    background-color: #E0E1DD;
     font-size: 15px;
-    text-decoration: none;
     top: 0;
   }
   
@@ -53,15 +52,10 @@
     margin: 0%;
   }
 
-  .noText:hover {
-    color: rgb(173, 172, 172)
-  }
-  
   .logoHeader {
     display: flex;
-    width: 100px;
+    width: 90px;
     padding: 10px;
-    justify-content: flex-start;
     transition: transform 0.3s ease-in-out;
   }
 
@@ -94,17 +88,13 @@
     margin-top: 0%;
   }
 
+  .backColorTwo{
+    padding: 40px;
+  }
+
   .backColor{
+    padding: 40px;
     background-color: #f3f3f3;
-    padding-top: 30px;
-  }
-
-  .backColorBot{
-    padding-bottom: 40px;
-  }
-
-  .backColorTop{
-    padding-top: 40px;
   }
 
   .noBotMargin{
@@ -137,18 +127,24 @@
     margin-bottom: 2vh;
   }
 
+  .marginTop{
+    margin-top: 5vh;
+  }
+
   .box {
     width: 600px;
   }
 
   .imgOne{
     width: 90%;
-    height: 32vh;
+    height: 28vh;
   }
   
   .imgTwo{
     width: 75%;
-    height: 32vh;
+    height: 28vh;
+    display: flex;
+    align-self: center;
   }
 
   .marginLeftRight{
