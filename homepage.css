@@ -7,16 +7,25 @@
     margin-right: 110px;
   }
 
+  .spaceTwo {
+    display: flex;
+    justify-content: center;
+  }
+
   .font{
     
   }
-
+  
   .noTextDec {
     color: black;
     text-decoration: none;
     font-style: unset;
   }
-
+  
+  .noTextDec:hover {
+    color: rgb(68, 66, 66);
+  }
+  
   .noTextDecTwo {
     color: white;
     text-decoration: none;
@@ -27,16 +36,19 @@
     list-style-type: none;
   }
 
+  p{
+    font-size: 17px;
+  }
+
   .top {
     display: flex;
-    background-color: rgb(123, 123, 123);  
+    background-color: #E0E1DD; 
     width: 100%;
     font-size: 15px;
     text-decoration: none;
     top: 0;
-    
   }
-
+  
   .noMargin {
     margin: 0%;
   }
@@ -44,29 +56,37 @@
   .noText:hover {
     color: rgb(173, 172, 172)
   }
-
+  
   .logoHeader {
     display: flex;
     width: 100px;
     padding: 10px;
     justify-content: flex-start;
+    transition: transform 0.3s ease-in-out;
   }
 
+  .logoHeader:hover {
+    transform: scale(1.05);
+  }
+  
   .widthRight{
     max-width: 300px;
     margin: 50px;
     text-align: center;
   }
-
+  
   .widthLeft{
     max-width: 300px;
     margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   footer{
     display: flex;
     justify-content: center;
-    background-color: #323232;
+    background-color: #1a2434;
     color: white;
   }
 
@@ -74,11 +94,59 @@
     margin-top: 0%;
   }
 
+  .noBotMargin{
+    margin-bottom: 0%;
+  }
+
   .centerFooter {
     display: flex;
     justify-content: center;
     padding: 20px;
-    background-color: #302d2d;
+    background-color: #0D1B2A;
+  }
+
+  .marginBox{
+    margin: 9vh;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+  }
+
+  .row{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .marginRight{
+    margin-right: 4vh;
+  }
+
+  .marginBot{
+    margin-bottom: 2vh;
+  }
+
+  .box {
+    width: 600px;
+  }
+
+  .imgOne{
+    width: 90%;
+    height: 32vh;
+  }
+  
+  .imgTwo{
+    width: 75%;
+    height: 32vh;
+  }
+
+  .marginLeftRight{
+    margin-right: 9vh;
+    margin-left: 9vh;
+  }
+
+  @media (max-width: 350px) {
+    .hiddenVideo {
+      display: none;
+    }
   }
   
   @media (max-width: 400px ) {
@@ -90,15 +158,28 @@
     }
   }
   
-  @media (max-width: 770px) {
+  @media (max-width: 750px) {
     .hidden {
         display: none;
       }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 745px) {
     footer {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .widthLeft {
+      max-width: 320px;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    .widthRight {
+      max-width: 320px;
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-top: 0;
     }
   }
