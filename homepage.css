@@ -94,6 +94,19 @@
     margin-top: 0%;
   }
 
+  .backColor{
+    background-color: #f3f3f3;
+    padding-top: 30px;
+  }
+
+  .backColorBot{
+    padding-bottom: 40px;
+  }
+
+  .backColorTop{
+    padding-top: 40px;
+  }
+
   .noBotMargin{
     margin-bottom: 0%;
   }
