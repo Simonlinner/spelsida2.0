@@ -3,19 +3,19 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: 100vh;
+    height: 70vh;
 }
 
 .img{
-    height: 35vh;
-    width: 34vw;
+    height: 15vw;
+    width: 30vw;
     margin-top: 1vh;
     margin-left: 1vw;
 }
 
 .imgTwo{
-    height: 35vh;
-    width: 19vw;
+    height: 15vw;
+    width: 15vw;
     margin-left: 2.3vw;
     margin-top: 1vh;
 }
@@ -37,13 +37,14 @@ ul{
 
 .text{
     color: black;
-    font-size: 6vh;
+    font-size: 3vw;
     margin-bottom: 0%;
     margin-top: 1vh;
 }
 
 .textColor{
     color: black;
+    font-size: 1.2vw;
 }
 
 .marginRight{
@@ -60,15 +61,17 @@ ul{
 .border{
     border-style: solid;
     border-radius: 7vh;
+    color: darkblue;
 }
 
 .hover{
     display: flex;
+    transition: transform 0.3s ease-in-out;
 }
 
 .hover:hover{
-    transition: 0.3s;
     transform: scale(1.05);
+    
 }
 
 .column{
@@ -86,10 +89,13 @@ ul{
 .headline{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3vw;
 }
 
 .width{
-    width: 40vw;
+    width: 30vw;
 }
 
 .center{
@@ -100,4 +106,12 @@ ul{
 .marginLR{
     margin-left: 2vw;
     margin-right: 2vw;
+}
+
+.height{
+    height: 26vw;
+}
+
+.intro{
+    width: 42vw;
 }

@@ -5,3 +5,11 @@ body {
     min-width: 480px;
     margin: 0 auto;
 }
+
+.game{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+}
