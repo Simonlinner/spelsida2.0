@@ -3,12 +3,12 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: 70vh;
+    height: 40vw;
 }
 
 .img{
-    height: 15vw;
-    width: 30vw;
+    height: 13vw;
+    width: 28vw;
     margin-top: 1vh;
     margin-left: 1vw;
 }
@@ -44,7 +44,7 @@ ul{
 
 .textColor{
     color: black;
-    font-size: 1.2vw;
+    font-size: 1.33vw;
 }
 
 .marginRight{
@@ -60,12 +60,11 @@ ul{
 
 .border{
     border-style: solid;
-    border-radius: 7vh;
+    border-radius: 4vw;
     color: darkblue;
 }
 
 .hover{
-    display: flex;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -91,7 +90,7 @@ ul{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-size: 1.3vw;
+    font-size: 1.83vw;
 }
 
 .width{
@@ -109,9 +108,53 @@ ul{
 }
 
 .height{
-    height: 26vw;
+    height: 27vw;
 }
 
 .intro{
     width: 42vw;
+}
+
+.font{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+
+    .hover{
+        margin-top: 4vw;
+    }
+
+    .height{
+        height: 60vw;
+    }
+
+    .width{
+        width: 60vw;
+    }
+
+    .textColor{
+        font-size: 3.2vw;
+    }
+
+    .text{
+        font-size: 5.5vw;
+    }
+
+    .img{
+        height: 24vw;
+        width: 45vw;
+    }
+
+    .imgTwo{
+        height: 23vw;
+        width: 20vw;
+    }
+
+    .headline{
+        font-size: 3.5vw;
+    }
 }
