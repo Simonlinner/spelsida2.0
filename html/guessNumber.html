@@ -1,31 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Number Guessing Game</title>
-    <link rel="stylesheet" type="text/css" href="/css/guessNumber.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+                   initial-scale=1.0">
+    <link rel="stylesheet" href="/css/guessNumber.css">
+    <title>Rock Paper Scissor</title>
 </head>
 
 <body>
-    <div class="game">
-        <h1>Guess The Number</h1>
-        <p>
-            We have selected a random number
-            between 1 - 100. See if you can
-            guess it.
-        </p>
+    <header class="top">   
+        <nav class="spaceNav">
+            <div class="logo">
+                <a href="homepage.html"><img src="/images/Logo.png" class="logoHeader" alt="logo" /></a>
+            </div>
+            <ul class="space hidden font resize">
+                <li>
+                    <h1><a href="ourgames.html" class="noTextDec">OUR GAMES</a></h1>
+                </li>
+                <li>
+                    <h1><a href="contactus.html" class="noTextDec">CONTACT US</a></h1>
+                </li>
+                <li>
+                    <h1>COMING SOON</a></h1>
+                </li>
+            </ul>
+        </nav> 
 
-        <div class="form">
-            <label for="guessField">
-                Enter a guess:
-            </label>
+        <ul class="rowIcons hidden">
+            <li>
+                <img src="/images/profile.png" class="imgSize" alt="Login button" />
+            </li>
+            <li>
+                <img src="/images/Search.png" class="imgSize" alt="Search button" />
+            </li>
+            <li>
+                <img src="/images/cart2.png" class="imgSize" alt="Card button" />
+            </li>
+        </ul>
 
-            <input type="text" id="guessField" class="guessField">
-
-            <input type="submit" value="Submit guess" class="guessSubmit" id="submitguess">
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
+
+        <nav class="menu">
+            <ul class="font">
+                <li>
+                    <a href="/html/ourGames.html">OUR GAMES</a>
+                </li>
+                <li>
+                    <a href="/html/contactUs.html">CONTACT US</a>
+                </li>
+                <li>
+                    <a href="">(COMING SOON)</a>
+                </li>
+            </ul>
+        </nav>
+        <script src="/javascript/script.js"></script>
+</header>
+
+<div class="game">
+    <h1 class="font">Guess The Number</h1>
+    <p>
+        We have selected a random number
+        between 1 - 100. See if you can
+        guess it.
+    </p>
+
+    <div class="form">
+        <label for="guessField">
+            Enter a guess:
+        </label>
+
+        <input type="text" id="guessField" class="guessField">
+
+        <input type="submit" value="Submit guess" class="guessSubmit" id="submitguess">
     </div>
+</div>
+
+    <footer>
+        <section class="widthLeft">
+            <h3 class="noMargin">
+                Liams Games
+            </h3>
+            <p>
+                Liam's Games Website is a virtual playground catering to gamers worldwide. It offers diverse 
+                games suitable for all ages and skill levels. The homepage showcases the latest releases and 
+                top-rated titles. Navigation is easy with organized categories.
+            </p>
+            <p>
+                It's not just a game library; it's a community hub. In short, Liam's Games Website is where gamers
+                find excitement and endless fun.
+            </p>
+        </section>
+        <section class="widthRight">
+            <ul class="noLeftPadding">
+                <h2 class="noTopMargin">
+                    Quick Links:
+                </h2>
+                <li class="noTopMargin">
+                    <h4>
+                        <a href="" class="noTextDecTwo">Why Us? (Coming soon)</a>
+                    </h4>
+                </li>
+                <li class="noTopMargin">
+                    <h4>
+                        <a href="" class="noTextDecTwo">Common Questions (Coming soon)</a>
+                    </h4>
+                </li>
+                <li class="noTopMargin">
+                    <h4>
+                        <a href="" class="noTextDecTwo">Terms & Conditions (Coming soon)</a>
+                    </h4>
+                </li>
+                <lic class="noTopMargin">
+                    <h4>
+                        <a href="" class="noTextDecTwo">Contact Us (Coming soon)</a>
+                    </h4>
+                </li>
+                <li class="noTopMargin">
+                    <h4>
+                        <a href="" class="noTextDecTwo">Shipping & Refunds (Coming soon)</a>
+                    </h4>
+                </li>
+                <li class="noTopMargin">
+                    <h4>
+                        <a href="" class="noTextDecTwo">Giveaways (Coming soon)</a>
+                    </h4>
+                </li>
+            </ul>
+        </section>
+    </footer>
+    <footer class="centerFooter">
+        <p>
+            &copy; 2024 Liams Games, Sweden. All rights reserved.
+        </p>
+    </footer>
 
     <script src="/javascript/guessNumber.js"></script>
 </body>

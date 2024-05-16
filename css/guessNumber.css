@@ -1,9 +1,5 @@
-body {
-    font-family: sans-serif;
-    width: 50%;
-    max-width: 800px;
-    min-width: 480px;
-    margin: 0 auto;
+.font{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .game{
@@ -11,5 +7,249 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 70vh;
+    height: 100vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
 }
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+.leftMargin{
+  margin-left: 10vw;
+}
+
+.moves{
+  padding-top: 20px;
+}
+
+.space {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 3%;
+}
+
+.rowIcons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10%;
+  margin-right: 35px;
+}
+
+
+.spaceNav {
+    display: flex;
+    width: 100%;
+}
+
+.spaceCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.noTextDec {
+    color: black;
+    text-decoration: none;
+    font-style: unset;
+}
+
+.noTextDec:hover {
+    color: rgb(68, 66, 66);
+}
+
+.noTextDecTwo {
+    color: white;
+    text-decoration: none;
+    font-style: unset;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    font-size: 17px;
+}
+
+.imgSize {
+    width: 30px;
+    height: 30px;
+    aspect-ratio: 1/1;
+}
+
+.top {
+    display: flex;
+    background-color: #E0E1DD;
+    font-size: 15px;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 6;
+}
+
+.noMargin {
+    margin: 0%;
+}
+
+.logoHeader {
+    display: flex;
+    width: 90px;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logoHeader:hover {
+    transform: scale(1.05);
+}
+
+.widthRight {
+    max-width: 300px;
+    margin: 50px;
+    text-align: center;
+}
+
+.widthLeft {
+    max-width: 300px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #1a2434;
+    color: white;
+}
+
+.centerFooter {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #0D1B2A;
+}
+
+
+.noLeftPadding {
+    padding-left: 0%;
+}
+
+.noTopMargin{
+    margin-top: 0%;
+}
+
+.back{
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .reverse{
+    flex-direction: row-reverse;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: fixed;
+    top: 36px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  .bar {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+  }
+
+  .menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #f9f9f9;
+    width: 200px;
+    height: 100%;
+    padding-top: 60px;
+    z-index: 998;
+  }
+
+  .menu ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .menu ul li {
+    padding: 20px;
+  }
+
+  .menu ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+
+
+  @media (max-width: 570px) {
+    .hiddenImg{
+      display: none;
+    }
+}
+
+@media (max-width: 825px) {
+    .resize{
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 750px) {
+    footer {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .widthLeft {
+      max-width: 320px;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    .widthRight {
+      max-width: 320px;
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: 1920px) {
+    .bar {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 710px ) {
+    .hidden{
+      display: none;
+    } 
+
+    .bar{
+      display: block;
+    }
+  }

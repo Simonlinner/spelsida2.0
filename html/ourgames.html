@@ -10,8 +10,59 @@
 </head>
 
 <body>
+    <header class="top">   
+        <nav class="spaceNav">
+            <div class="logo">
+                <a href="homepage.html"><img src="/images/Logo.png" class="logoHeader" alt="logo" /></a>
+            </div>
+            <ul class="space hidden font resize">
+                <li>
+                    <h1><a href="ourgames.html" class="noTextDec">OUR GAMES</a></h1>
+                </li>
+                <li>
+                    <h1><a href="contactus.html" class="noTextDec">CONTACT US</a></h1>
+                </li>
+                <li>
+                    <h1>COMING SOON</a></h1>
+                </li>
+            </ul>
+        </nav> 
+
+        <ul class="rowIcons hidden">
+            <li>
+                <img src="/images/profile.png" class="imgSize" alt="Login button" />
+            </li>
+            <li>
+                <img src="/images/Search.png" class="imgSize" alt="Search button" />
+            </li>
+            <li>
+                <img src="/images/cart2.png" class="imgSize" alt="Card button" />
+            </li>
+        </ul>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <nav class="menu">
+            <ul class="font">
+                <li>
+                    <a href="/html/ourGames.html">OUR GAMES</a>
+                </li>
+                <li>
+                    <a href="/html/contactUs.html">CONTACT US</a>
+                </li>
+                <li>
+                    <a href="">(COMING SOON)</a>
+                </li>
+            </ul>
+        </nav>
+        <script src="/javascript/script.js"></script>
+</header>
     <div class="headline">
-        <h1 class="font">
+        <h1 class="font marginTop textSize">
             Games
         </h1>
         <p class="intro">
@@ -20,7 +71,7 @@
             Join our community for endless fun and friendly competition!
         </p>
     </div>
-    <div class="row">
+    <div class="rowOne">
         <div class="hover width">
             <a href="/html/rockPaperScissor.html" class="link noUnderline column width border height">
                 <div class="rowGame">
@@ -63,9 +114,65 @@
                 </div>
             </a>
         </div>
-
-
     </div>
+    <footer>
+        <section class="widthLeft">
+            <h3 class="noMargin">
+                Liams Games
+            </h3>
+            <p>
+                Liam's Games Website is a virtual playground catering to gamers worldwide. It offers diverse 
+                games suitable for all ages and skill levels. The homepage showcases the latest releases and 
+                top-rated titles. Navigation is easy with organized categories.
+            </p>
+            <p>
+                It's not just a game library; it's a community hub. In short, Liam's Games Website is where gamers
+                find excitement and endless fun.
+            </p>
+        </section>
+        <section class="widthRight">
+            <ul class="noLeftPadding">
+                <h2 class="noTopMargin">
+                    Quick Links:
+                </h2>
+                <li class="noTopMargin">
+                    <h4>
+                        <a href="" class="noTextDecTwo">Why Us? (Coming soon)</a>
+                    </h4>
+                </li>
+                <li class="noTopMargin">
+                    <h4>
+                        <a href="" class="noTextDecTwo">Common Questions (Coming soon)</a>
+                    </h4>
+                </li>
+                <li class="noTopMargin">
+                    <h4>
+                        <a href="" class="noTextDecTwo">Terms & Conditions (Coming soon)</a>
+                    </h4>
+                </li>
+                <lic class="noTopMargin">
+                    <h4>
+                        <a href="" class="noTextDecTwo">Contact Us (Coming soon)</a>
+                    </h4>
+                </li>
+                <li class="noTopMargin">
+                    <h4>
+                        <a href="" class="noTextDecTwo">Shipping & Refunds (Coming soon)</a>
+                    </h4>
+                </li>
+                <li class="noTopMargin">
+                    <h4>
+                        <a href="" class="noTextDecTwo">Giveaways (Coming soon)</a>
+                    </h4>
+                </li>
+            </ul>
+        </section>
+    </footer>
+    <footer class="centerFooter">
+        <p>
+            &copy; 2024 Liams Games, Sweden. All rights reserved.
+        </p>
+    </footer>
 
 </body>
 
