@@ -1,17 +1,28 @@
-.row{
-    display: flex;
-    flex-direction: row;
+.message{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  margin-right: 4vw;
+  margin-left: 4vw;
+}
+.column{
+  display: flex;
+  flex-direction: column;
 }
 
-.column{
-    display: flex;
-    flex-direction: column;
+.margin{
+  margin-left: 7vw;
+  margin-right: 7vw;
+  text-align: center;
 }
 
 .topMargin{
-    margin-top: 21vh;
-    margin-left: 7vw;
-    margin-right: 7vw;
+  margin-top: 21vh;
+  display: flex;
+  justify-content: center;
 }
 
 .font{
@@ -19,8 +30,12 @@
 }
 
 @media (max-width: 500px){
-    .topMargin{
+    .margin{
         font-size: smaller;
+    }
+
+    .topMargin{
+      font-size: 3.5vh;
     }
 }
 
@@ -35,9 +50,19 @@
     margin-left: 4vw;
   }
 
-.leftMargin{
-  margin-left: 10vw;
-}
+  .leftMargin{
+    margin-left: 10vw;
+  }
+  .menu-toggle {
+    display: none;
+    width: 30px;
+    height: 20px;
+    position: fixed;
+    top: 36px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 999;
+  }
 
 .moves{
   padding-top: 20px;
@@ -90,19 +115,13 @@
       margin-top: 0;
     }
   }
-
-  @media (max-width: 1920px) {
-    .bar {
-      display: none;
-    }
-  }
   
   @media (max-width: 710px ) {
     .hidden{
       display: none;
     } 
 
-    .bar{
+    .menu-toggle{
       display: block;
     }
   }
@@ -224,16 +243,6 @@ footer {
     margin: 0;
   }
 
-  .menu-toggle {
-    display: block;
-    width: 30px;
-    height: 20px;
-    position: fixed;
-    top: 36px;
-    right: 20px;
-    cursor: pointer;
-    z-index: 999;
-  }
 
   .bar {
     width: 100%;

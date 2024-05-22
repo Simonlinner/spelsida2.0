@@ -112,6 +112,17 @@ ul {
     margin-right: 2vw;
 }
 
+.menu-toggle {
+  display: none;
+  width: 30px;
+  height: 20px;
+  position: fixed;
+  top: 36px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 999;
+}
+
 .height {
     height: 25vw;
 }
@@ -220,20 +231,14 @@ ul {
       margin-top: 0;
     }
   }
-
-  @media (max-width: 1920px) {
-    .bar {
-      display: none;
-    }
-  }
   
   @media (max-width: 710px ) {
     .hidden{
       display: none;
     } 
 
-    .bar{
-      display: block;
+    .menu-toggle{
+        display: block;
     }
   }
 
@@ -354,16 +359,6 @@ footer {
     margin: 0;
   }
 
-  .menu-toggle {
-    display: block;
-    width: 30px;
-    height: 20px;
-    position: fixed;
-    top: 36px;
-    right: 20px;
-    cursor: pointer;
-    z-index: 999;
-  }
 
   .bar {
     width: 100%;

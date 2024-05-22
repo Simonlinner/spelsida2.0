@@ -98,6 +98,17 @@
     align-items: center;
     height: 100vh;
   }
+  
+    .menu-toggle {
+      display: none;
+      width: 30px;
+      height: 20px;
+      position: fixed;
+      top: 36px;
+      right: 20px;
+      cursor: pointer;
+      z-index: 999;
+    }
 
 .leftMargin{
   margin-left: 10vw;
@@ -154,19 +165,13 @@
       margin-top: 0;
     }
   }
-
-  @media (max-width: 1920px) {
-    .bar {
-      display: none;
-    }
-  }
   
   @media (max-width: 710px ) {
     .hidden{
       display: none;
     } 
 
-    .bar{
+    .menu-toggle{
       display: block;
     }
   }
@@ -286,17 +291,6 @@ footer {
 
   body {
     margin: 0;
-  }
-
-  .menu-toggle {
-    display: block;
-    width: 30px;
-    height: 20px;
-    position: fixed;
-    top: 36px;
-    right: 20px;
-    cursor: pointer;
-    z-index: 999;
   }
 
   .bar {

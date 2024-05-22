@@ -2,6 +2,20 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.textCenter{
+  text-align: center;
+}
+
+.center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gameMargin{
+  margin-top: 2vh;
+}
+
 .game{
     display: flex;
     justify-content: center;
@@ -161,7 +175,7 @@ footer {
   }
 
   .menu-toggle {
-    display: block;
+    display: none;
     width: 30px;
     height: 20px;
     position: fixed;
@@ -237,19 +251,13 @@ footer {
       margin-top: 0;
     }
   }
-
-  @media (max-width: 1920px) {
-    .bar {
-      display: none;
-    }
-  }
   
   @media (max-width: 710px ) {
     .hidden{
       display: none;
     } 
 
-    .bar{
+    .menu-toggle{
       display: block;
     }
   }
