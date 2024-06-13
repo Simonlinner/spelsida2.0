@@ -161,7 +161,7 @@
   }
   
   .marginTop{
-    margin-top: 16vh;
+    margin-top: 130px;
   }
   
   .marginBot{
@@ -174,19 +174,17 @@
   
   .imgOne{
     width: 310px;
-    height: 28vh;
   }
   
   .imgTwo{
     max-width: 150px;
-    height: 28vh;
+    height: 220px;
     display: flex;
-    align-self: center;
+    align-items: center;
   }
   
   .imgThree{
-    width: 75%;
-    height: 28vh;
+    width: 70%;
   }
   
   .textAlign{
@@ -240,12 +238,12 @@
     .hiddenImg{
       display: none;
     }
-  }
-  
-  @media (max-width: 520px) {
     .row {
       flex-direction: column;
     }
+  }
+  
+  @media (max-width: 520px) {
     .marginRight{
       margin-right: 0%;
     }
